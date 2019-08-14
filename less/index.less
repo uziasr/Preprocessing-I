@@ -3,10 +3,19 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+//variables
 @margin-top-bottom:4%;
 @p-font-size:1.1em;
 @resume-font:'Slabo 27px', serif;
 @h2-font-size:2.25em;
+@whitesmoke:whitesmoke;
+@gray:gray;
+@big-title:4em;
+@big-title-r:2.5em;
+@nav-fs-r:1.125em;
+@h3-font-size:1.5em;
+@h3-font-size-r:1.em;
+
 
 .centered(){
 	display:flex;
@@ -29,7 +38,7 @@
 }
 .buttoned(){
 	color:white;
-	background-color:grey;
+	background-color:@gray;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -118,10 +127,11 @@ header {
 		@media (max-width:500px){
 			width:100%;
 			justify-content:space-evenly;
-			font-size: 1.125em;
+			font-size: @nav-fs-r;
 		}
 		a{
 			.simplify-a();
+			font-size: @p-font-size;
 
 		}
 
@@ -142,18 +152,18 @@ main{
 			}
 		}
 		h1{
-			font-size:4em;
+			font-size:@big-title;
 			@media (max-width:500px){
 				text-align: center;
-				font-size:2em;
+				font-size:@big-title-r;
 			}
 		}
 		h3{
-			font-size:1.5em;
+			font-size:@h3-font-size;
 			padding-bottom:3%;
 			border-bottom: 1px solid lightgray;
 			@media (max-width:500px){
-				font-size: 1em;
+				font-size: @h3-font-size-r;
 				text-align: center;
 			}
 			
@@ -170,7 +180,7 @@ main{
 			width:20%;
 			border-radius: 5px;
 			text-align: center;
-			font-size: 1.4em;
+			font-size: @h3-font-size;
 			@media (max-width:500px){
 				width:80%;
 				margin: 2% 0;
@@ -253,7 +263,7 @@ section.work-history{
 	}
 	
 	tr:nth-child(even) {
-		background-color: whitesmoke;
+		background-color:@whitesmoke;
 		.table-border()
 	}
 	h2{
