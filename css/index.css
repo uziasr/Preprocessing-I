@@ -1,1 +1,332 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0.5%;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+p {
+  font-size: 1.1em;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+h2 {
+  font-size: 2.25em;
+}
+th {
+  font-size: 1.1em;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Slabo 27px', serif;
+}
+body {
+  width: 85%;
+  margin: auto;
+}
+header {
+  margin-top: 4%;
+  display: flex;
+  justify-content: flex-end;
+  align-content: space-around;
+  align-items: space-around;
+  margin-bottom: 1.5%;
+}
+header nav {
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 1.125em;
+  }
+}
+header nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+}
+main {
+  background: whitesmoke;
+}
+main .about-me {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 3%;
+  padding: 2% 3%;
+}
+main .about-me img {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  main .about-me img {
+    width: 100%;
+  }
+}
+main .about-me h1 {
+  font-size: 4em;
+}
+@media (max-width: 500px) {
+  main .about-me h1 {
+    text-align: center;
+    font-size: 2.5em;
+  }
+}
+main .about-me h3 {
+  font-size: 1.5em;
+  padding-bottom: 3%;
+  border-bottom: 1px solid lightgray;
+}
+@media (max-width: 500px) {
+  main .about-me h3 {
+    font-size: 1em;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  main .about-me p {
+    display: none;
+  }
+}
+main .about-me a {
+  padding: 1% 1.5%;
+  text-decoration: none;
+  color: black;
+  color: white;
+  background-color: gray;
+  width: 20%;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.5em;
+}
+@media (max-width: 500px) {
+  main .about-me a {
+    width: 80%;
+    margin: 2% 0;
+    align-self: center;
+  }
+}
+section.about-summary {
+  display: flex;
+  margin: 5% 0;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  section.about-summary {
+    display: flex;
+    flex-direction: column;
+  }
+}
+section.about-summary .summary {
+  width: 60%;
+}
+@media (max-width: 500px) {
+  section.about-summary .summary {
+    width: 100%;
+    margin: 6% 0;
+  }
+}
+section.about-summary .summary h2 {
+  font-size: 2.25em;
+}
+@media (max-width: 500px) {
+  section.about-summary .summary h2 {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+}
+section.about-summary .summary p {
+  line-height: 150%;
+}
+section.about-summary .skills {
+  width: 40%;
+}
+@media (max-width: 500px) {
+  section.about-summary .skills {
+    width: 100%;
+    text-align: center;
+  }
+}
+section.about-summary .skills h2 {
+  font-size: 2.25em;
+}
+@media (max-width: 500px) {
+  section.about-summary .skills h2 {
+    margin-bottom: 5%;
+  }
+}
+section.about-summary .skills p {
+  margin: 0%;
+  padding: 4% 0;
+  border: 1px solid lightgray;
+  padding-left: 3%;
+}
+@media (max-width: 500px) {
+  section.work-history {
+    margin-bottom: 5%;
+  }
+}
+section.work-history table {
+  border-collapse: collapse;
+  width: 100%;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+}
+section.work-history th {
+  font-weight: bold;
+}
+section.work-history th,
+section.work-history td {
+  text-align: left;
+  padding: 1%;
+}
+section.work-history tr:nth-child(even) {
+  background-color: whitesmoke;
+  border-bottom: 1px solid lightgray;
+  border-top: 1px solid lightgray;
+}
+@media (max-width: 500px) {
+  section.work-history h2 {
+    text-align: center;
+    margin: 5%;
+  }
+}
+footer {
+  color: white;
+  background-color: gray;
+  margin: 3% 0;
+  text-align: center;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-bottom: 6%;
+  }
+}
